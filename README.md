@@ -15,7 +15,7 @@ This project is a frontend implementation based on a Figma design provided as pa
 
 ## Tech Stack
 
-- ReactJS
+- JavaScript (ReactJS)
 - HTML
 - CSS
 - Git for version control
