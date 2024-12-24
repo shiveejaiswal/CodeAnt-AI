@@ -14,4 +14,3 @@ const RepositoryPage = () => {
 }
 
 export default RepositoryPage
-
