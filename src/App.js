@@ -1,17 +1,18 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import LoginPage from './pages/LoginPage';
+import SignupPage from './pages/SignupPage';
 import RepositoryPage from './pages/RepositoryPage';
 
-function App() {
+const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<LoginPage />} />
-        <Route path="/repositories" element={<RepositoryPage />} />
+        <Route path="/" element={<SignupPage />} />
+        <Route path="/signup" element={<SignupPage />} />
+        <Route path="/repository" element={<RepositoryPage />} />
       </Routes>
     </Router>
   );
-}
+};
 
 export default App;
