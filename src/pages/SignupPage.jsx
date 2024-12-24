@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import groupImage from '../assets/Group 37111.png';
 import logoImage from '../assets/Logo.png';
 import githubIcon from '../assets/github.png';
@@ -7,6 +7,7 @@ import bitbucketIcon from '../assets/bitbucket.png';
 import azureIcon from '../assets/azure.png';
 import gitlabIcon from '../assets/gitlab.png';
 import secondImage from '../assets/Subtract.png';
+import keyIcon from '../assets/sso.png';
 
 const SignupPage = () => {
   const [selectedOption, setSelectedOption] = useState('SAAS');
@@ -151,7 +152,7 @@ const SignupPage = () => {
                 onClick={handleLoginClick}
               >
                 <img
-                  src={gitlabIcon}
+                  src={keyIcon}
                   alt="SSO"
                   className="absolute left-4 h-5 w-5"
                 />
@@ -168,16 +169,6 @@ const SignupPage = () => {
             </span>
             .
           </p>
-          
-          {/* Link to Login Page */}
-          <div className="text-center">
-            <p className="text-sm text-gray-500">
-              Already have an account?{' '}
-              <Link to="/login" className="text-blue-600 hover:underline">
-                Sign In
-              </Link>
-            </p>
-          </div>
         </div>
       </div>
     </div>
